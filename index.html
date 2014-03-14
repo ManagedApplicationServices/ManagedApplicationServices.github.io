@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robin</title>
+    <link href="assets/bootstrap.css?body=1" media="all" rel="stylesheet" />
+    <link href="assets/font-awesome.min.css?body=1" media="all" rel="stylesheet" />
+    <link href="assets/main.css?body=1" media="all" rel="stylesheet" />
+    <script src="assets/jquery.js?body=1"></script>
+    <script src="assets/Chart.js?body=1"></script>
+    <script src="assets/bootstrap.js?body=1"></script>
+    <script src="assets/classie.js?body=1"></script>
+    <script src="assets/main.js?body=1"></script>
+    <script src="assets/smoothscroll.js?body=1"></script>
+</head>
+
+<body data-offset='0' data-spy='scroll' data-target='#theMenu'>
+<!-- Menu -->
+<nav class='menu' id='theMenu'>
+    <div class='menu-wrap'>
+        <h1 class='logo'>
+            <a href='index.html#home'>Minimal</a>
+        </h1>
+        <i class='icon-remove menu-close'></i>
+        <a class='smoothScroll' href='#home'>Home</a>
+        <a class='smoothScroll' href='#about'>About</a>
+        <a class='smoothScroll' href='#portfolio'>Portfolio</a>
+        <a class='smoothScroll' href='#contact'>Contact</a>
+        <a href='#'>
+            <i class='icon-facebook'></i>
+        </a>
+        <a href='#'>
+            <i class='icon-twitter'></i>
+        </a>
+        <a href='#'>
+            <i class='icon-dribbble'></i>
+        </a>
+        <a href='#'>
+            <i class='icon-envelope'></i>
+        </a>
+    </div>
+    <!-- Menu button -->
+    <div id='menuToggle'>
+        <i class='icon-reorder'></i>
+    </div>
+</nav>
+<!-- ========== HEADER SECTION ========== -->
+<section id='home' name='home'></section>
+<div id='headerwrap'>
+    <div class='container'>
+        <div class='logo'>
+            <img src='assets/logo.png'>
+        </div>
+        <br>
+        <div class='row'>
+            <h1>MINIMAL THEME</h1>
+            <br>
+            <h3>Hello, I'm Sam. I love design.</h3>
+            <br>
+            <br>
+            <div class='col-lg-6 col-lg-offset-3'></div>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- /headerwrap -->
+<!-- ========== ABOUT SECTION ========== -->
+<section id='about' name='about'></section>
+<div id='f'>
+    <div class='container'>
+        <div class='row'>
+            <h3>ABOUT ME</h3>
+            <p class='centered'>
+                <i class='icon icon-circle'></i>
+                <i class='icon icon-circle'></i>
+                <i class='icon icon-circle'></i>
+            </p>
+            <!-- INTRO INFORMATIO -->
+            <div class='col-lg-6 col-lg-offset-3'>
+                <p>A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and user-friendly interfaces for websites.</p>
+                <p>My passion is turning good ideas and products into eye-catching sites.</p>
+                <p>
+                    Sometimes I blog about design and web trends. Also I share links and my thoughts on
+                    <a href='http://twitter.com/BlackTie_co'>Twitter</a>.
+                    <a href='http://blacktie.co'>Done!</a>
+                </p>
+                <p>I'm available for freelance jobs. Contact me now.</p>
+                <p>
+                    <button class='btn btn-warning' type='button'>I HAVE A FREELANCE JOB</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- /f -->
+<!-- ========== CAROUSEL SECTION ========== -->
+<section id='portfolio' name='portfolio'></section>
+<div id='f'>
+    <div class='container'>
+        <div class='row centered'>
+            <h3>SOME PROJECTS</h3>
+            <p class='centered'>
+                <i class='icon icon-circle'></i>
+                <i class='icon icon-circle'></i>
+                <i class='icon icon-circle'></i>
+            </p>
+            <div class='col-lg-6 col-lg-offset-3'>
+                <div class='carousel slide' data-ride='carousel' id='carousel-example-generic'>
+                    <!-- Wrapper for slides -->
+                    <div class='carousel-inner'>
+                        <div class='item active centered'>
+                            <img alt='' class='img-responsive' src='assets/c1.png'>
+                        </div>
+                        <div class='item centered'>
+                            <img alt='' class='img-responsive' src='assets/c2.png'>
+                        </div>
+                        <div class='item centered'>
+                            <img alt='' class='img-responsive' src='assets/c3.png'>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <ol class='carousel-indicators'>
+                        <li class='active' data-slide-to='0' data-target='#carousel-example-generic'></li>
+                        <li data-slide-to='1' data-target='#carousel-example-generic'></li>
+                        <li data-slide-to='2' data-target='#carousel-example-generic'></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- col-lg-8 -->
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</div>
+<!-- f -->
+<!-- ========== CONTACT SECTION ========== -->
+<section id='contact' name='contact'></section>
+<div id='f'>
+    <div class='container'>
+        <div class='row'>
+            <h3>CONTACT ME</h3>
+            <p class='centered'>
+                <i class='icon icon-circle'></i>
+                <i class='icon icon-circle'></i>
+                <i class='icon icon-circle'></i>
+            </p>
+            <div class='col-lg-6 col-lg-offset-3'>
+                <p>
+                    Some Avenue, 987<br>Madrid, Spain<br>+34 8984-4343
+                </p>
+                <p>iam@awesomemail.com</p>
+                <p>
+                    <button class='btn btn-warning' type='button'>YEAH! CONTACT ME NOW!</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#menuToggle, .menu-close').on('click', function(){
+        $('#menuToggle').toggleClass('active');
+        $('body').toggleClass('body-push-toleft');
+        $('#theMenu').toggleClass('menu-open');
+    });
+</script>
+</body>
+</html>
