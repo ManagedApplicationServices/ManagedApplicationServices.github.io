@@ -1,0 +1,81 @@
+%section#home{name: "home"}
+#headerwrap
+  .container
+    .logo
+      %img{src: "assets/logo.png"}/
+    %br/
+    .row
+      %h1 MINIMAL THEME
+      %br/
+      %h3 Hello, I'm Sam. I love design.
+      %br/
+      %br/
+      .col-lg-6.col-lg-offset-3
+
+%section#about{name: "about"}
+#f
+  .container
+    .row
+      %h3 ABOUT ME
+      %p.centered
+        %i.icon.icon-circle
+        %i.icon.icon-circle
+        %i.icon.icon-circle
+      / INTRO INFORMATIO
+      .col-lg-6.col-lg-offset-3
+        %p A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and user-friendly interfaces for websites.
+        %p My passion is turning good ideas and products into eye-catching sites.
+        %p
+          Sometimes I blog about design and web trends. Also I share links and my thoughts on
+          = succeed "." do
+            %a{href: "http://twitter.com/BlackTie_co"} Twitter
+          %a{href: "http://blacktie.co"} Done!
+        %p I'm available for freelance jobs. Contact me now.
+        %p
+          %button.btn.btn-warning{type: "button"} I HAVE A FREELANCE JOB
+
+%section#portfolio{name: "portfolio"}
+#f
+  .container
+    .row.centered
+      %h3 SOME PROJECTS
+      %p.centered
+        %i.icon.icon-circle
+        %i.icon.icon-circle
+        %i.icon.icon-circle
+      .col-lg-6.col-lg-offset-3
+        #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+          / Wrapper for slides
+          .carousel-inner
+            .item.active.centered
+              %img.img-responsive{alt: "", src: "assets/c1.png"}/
+            .item.centered
+              %img.img-responsive{alt: "", src: "assets/c2.png"}/
+            .item.centered
+              %img.img-responsive{alt: "", src: "assets/c3.png"}/
+          %br/
+          %br/
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+            %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+            %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+
+%section#contact{name: "contact"}
+#f
+  .container
+    .row
+      %h3 CONTACT ME
+      %p.centered
+        %i.icon.icon-circle
+        %i.icon.icon-circle
+        %i.icon.icon-circle
+      .col-lg-6.col-lg-offset-3
+        %p
+          Some Avenue, 987
+          %br>/
+          Madrid, Spain
+          %br>/
+          +34 8984-4343
+        %p iam@awesomemail.com
+        %p
+          %button.btn.btn-warning{type: "button"} YEAH! CONTACT ME NOW!
