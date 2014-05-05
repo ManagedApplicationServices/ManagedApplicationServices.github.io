@@ -6,6 +6,7 @@
     %link{href: "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", media: "all", rel: "stylesheet"}
     %link{href: "assets/animations.css?body=1", media: "all", rel: "stylesheet"}/
     %link{href: "assets/main.css?body=1", media: "all", rel: "stylesheet"}/
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1, user-scalable=no"}
     %script{src: "assets/jquery.js?body=1"}
     %script{src: "assets/Chart.js?body=1"}
     %script{src: "assets/bootstrap.js?body=1"}
@@ -25,9 +26,3 @@
       #menuToggle
         %i.fa.fa-bars
     =yield
-    :javascript
-      $('#menuToggle, .menu-close').on('click', function(){
-          $('#menuToggle').toggleClass('active');
-          $('body').toggleClass('body-push-toleft');
-          $('#theMenu').toggleClass('menu-open');
-      });
