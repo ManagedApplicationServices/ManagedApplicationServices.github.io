@@ -148,7 +148,7 @@ hr {
 
 .terminal {
   width: 40vw !important;
-  min-width: 280px !important;
+  min-width: 350px !important;
   margin: 0 auto !important;
   background: none !important;
   word-break: keep-all !important;
@@ -157,6 +157,9 @@ hr {
   border: none !important;
   background-color: #111 !important;
   text-align: left !important;
+  @media (min-width: 400px) {
+    min-width: 280px;
+  }
   p {
     color: rgb(0,200,0) !important;
     font-size: 0.8em !important;
@@ -170,6 +173,7 @@ hr {
     height: 24px;
     background-color: rgb(0,200,0);
     display:inline;
+    margin-left: -5px;
   	-webkit-animation: blinker 1s step-end infinite;
   	-moz-animation: blinker 1s step-end infinite;
   	-o-animation: blinker 1s step-end infinite;
@@ -340,6 +344,10 @@ hr {
 
 .body-push-toleft {
   left: -200px;
+}
+
+.easter {
+  color: rgb(0,220,0);
 }
 
 .menu, .body-push {
