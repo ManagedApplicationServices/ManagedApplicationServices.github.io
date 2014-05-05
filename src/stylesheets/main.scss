@@ -9,6 +9,13 @@
 @import "compass/css3/border-radius";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 
+html {
+  overflow-x: hidden;
+}
+.container {
+  width: 100% !important;
+  overflow:hidden;
+}
 body {
   background-color: #86B4CC; //#f2f2f2;
   font-family: 'Open Sans', sans-serif;
@@ -18,6 +25,7 @@ body {
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 /* Titles */
@@ -78,7 +86,6 @@ hr {
    ========================================================================== */
 
 #headerwrap {
-  //background: url(../assets/header-bg.jpg) no-repeat center top;
   margin-top: 0px;
   padding-top: 0px;
   text-align: center;
@@ -86,6 +93,17 @@ hr {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    min-height: 500px !important;
+    height: 500px !important;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    min-height: 500px !important;
+    height: 500px !important;
+  }
+
   h1 {
     margin-top: 150px;
     color: white;
@@ -143,12 +161,18 @@ hr {
   	-moz-animation: movehint 0.4s alternate infinite;
   	-o-animation: movehint 0.4s alternate infinite;
     @include border-radius(4px, 4px);
+    @media (min-width: 470px) and (max-device-width: 480px) {
+      display: none;
+    }
+    @media (min-width: 560px) and (max-device-width: 568px) {
+      display:none;
+    }
   }
 }
 
 .terminal {
   width: 40vw !important;
-  min-width: 350px !important;
+  min-width: 280px !important;
   margin: 0 auto !important;
   background: none !important;
   word-break: keep-all !important;
@@ -157,8 +181,20 @@ hr {
   border: none !important;
   background-color: #111 !important;
   text-align: left !important;
-  @media (min-width: 400px) {
-    min-width: 280px;
+
+  // iPhone Retina Landscape
+  @media (min-width: 560px) and (max-device-width : 568px) {
+    min-width: 540px !important;
+  }
+
+  // iPhone Landscape
+  @media (min-width: 470px) and (max-device-width : 480px) {
+    min-width: 400px !important;
+  }
+
+
+  @media (min-width: 600px) {
+    min-width: 450px !important;
   }
   p {
     color: rgb(0,200,0) !important;
