@@ -1,1 +1,50 @@
-.cloud{z-index:-999;width:150px;height:60px;background:#fff;border-radius:200px 200px 200px 200px;-moz-border-radius:200px 200px 200px 200px;-webkit-border-radius:200px 200px 200px 200px;position:absolute;top:200px;display:none;visibility:hidden}@media (min-width: 800px){.cloud{display:block !important;visibility:visible}}.cloud:before{content:'';width:80px;height:80px;background:#fff;border-radius:200px 200px 200px 200px;-moz-border-radius:200px 200px 200px 200px;-webkit-border-radius:200px 200px 200px 200px;top:-40px;left:50px;position:absolute}.cloud:after{content:'';width:40px;height:40px;background:#fff;border-radius:200px 200px 200px 200x;-moz-border-radius:200px 200px 200px 200px;-webkit-border-radius:200px 200px 200px 200px;top:-20px;left:20px;position:absolute}.x1{-webkit-animation:moveclouds 60s linear infinite;-moz-animation:moveclouds 60s linear infinite;-o-animation:moveclouds 60s linear infinite;opacity:0.4;right:200px}.x2{right:290px;-webkit-transform:scale(0.6);-moz-transform:scale(0.6);transform:scale(0.6);opacity:0.5;-webkit-animation:moveclouds 80s linear infinite;-moz-animation:moveclouds 80s linear infinite;-o-animation:moveclouds 80s linear infinite}.x3{right:350px;top:310px;-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8);opacity:0.4;-webkit-animation:moveclouds 110s linear infinite;-moz-animation:moveclouds 110s linear infinite;-o-animation:moveclouds 110s linear infinite}.x4{right:420px;top:150px;-webkit-transform:scale(0.75);-moz-transform:scale(0.75);transform:scale(0.75);opacity:0.3;-webkit-animation:moveclouds 72s linear infinite;-moz-animation:moveclouds 72s linear infinite;-o-animation:moveclouds 72s linear infinite}.x5{right:260px;top:450px;-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8);opacity:0.6;-webkit-animation:moveclouds 90s linear infinite;-moz-animation:moveclouds 90s linear infinite;-o-animation:moveclouds 90s linear infinite}@-webkit-keyframes moveclouds{0%{margin-left:1000px}100%{margin-left:10px}}@-moz-keyframes moveclouds{0%{margin-left:1000px}100%{margin-left:10px}}@-o-keyframes moveclouds{0%{margin-left:1000px}100%{margin-left:10px}}
+/*
+Syntax error: Invalid CSS after "  display:": expected pseudoclass or pseudoelement, was " none;"
+        on line 26 of /Users/sam/workspace/ManagedApplicationServices.github.io/src/stylesheets/clouds.scss
+
+Backtrace:
+/Users/sam/workspace/ManagedApplicationServices.github.io/src/stylesheets/clouds.scss:26
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:1067:in `expr!'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:794:in `pseudo'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:678:in `simple_selector_sequence'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:640:in `_selector'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:619:in `selector'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:603:in `selector_sequence'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:528:in `ruleset'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/commands/update_project.rb:45:in `perform'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/bin/compass:44:in `call'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/compass:23:in `load'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/compass:23:in `<main>'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/ruby_executable_hooks:15:in `eval'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"  display:\": expected pseudoclass or pseudoelement, was \" none;\"\A         on line 26 of /Users/sam/workspace/ManagedApplicationServices.github.io/src/stylesheets/clouds.scss"; }

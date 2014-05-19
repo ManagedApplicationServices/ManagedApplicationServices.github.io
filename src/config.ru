@@ -12,7 +12,7 @@ end
 
 require 'serve'
 require 'serve/rack'
-
+require 'haml'
 # The project root directory
 root = ::File.dirname(__FILE__)
 
@@ -23,10 +23,10 @@ if ENV['RACK_ENV'] != 'production'
   require 'sass'
   require 'sass/plugin/rack'
   require 'compass'
-  
+
   Compass.add_project_configuration(root + '/compass.config')
   Compass.configure_sass_plugin!
-  
+
   use Sass::Plugin::Rack  # Sass Middleware
 end
 

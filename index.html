@@ -23,6 +23,7 @@
         <i class='fa fa-times menu-close'></i>
         <a class='smoothScroll' href='#home'>Home</a>
         <a class='smoothScroll' href='#about'>About</a>
+        <a class='smoothScroll' href='#environment'>Environment</a>
         <a class='smoothScroll' href='#careers'>Careers</a>
         <a class='smoothScroll' href='#contact'>Contact</a>
       </div>
@@ -32,16 +33,18 @@
     </nav>
     <section id='home' name='home'></section>
     <div id='headerwrap'>
-      <div class='container'>
+      <div class='container no-borders'>
         <div class='logo ricoh-white'></div>
         <br>
         <div class='row'>
-          <div class='cloud x1'></div>
-          <div class='cloud x2'></div>
-          <div class='cloud x3'></div>
-          <div class='cloud x4'></div>
-          <div class='cloud x5'></div>
           <div class='mas-logo'></div>
+          <div class='clouds'>
+            <div class='cloud x1'></div>
+            <div class='cloud x2'></div>
+            <div class='cloud x3'></div>
+            <div class='cloud x4'></div>
+            <div class='cloud x5'></div>
+          </div>
           <h4 class='hero-message'>Design &bull; Build &bull; Deliver &bull; Support</h4>
           <div class='scroll-hint'>
             Interested? Scroll on
@@ -54,20 +57,14 @@
     </div>
     <section id='about' name='about'></section>
     <div class='f'>
-      <div class='container'>
+      <div class='container no-borders'>
         <div class='row'>
           <h3>About</h3>
-          <p class='centered'>
-            <i class='icon icon-circle'></i>
-            <i class='icon icon-circle'></i>
-            <i class='icon icon-circle'></i>
-          </p>
-          <!-- INTRO INFORMATIO -->
           <div class='col-lg-6 col-lg-offset-3'>
-            <p>Ricoh draws from years of experience at providing essential enterprise technologies, and as well as best practices from the Silicon Valley, to form the Managed Application Services team in Singapore.</p>
+            <p>Ricoh draws from years of experience at providing essential enterprise technologies, as well as best practices from the Silicon Valley, to form the Managed Application Services team in Singapore.</p>
             <p>By crystalizing great ideas and turning them into interesting products, we make the world a better place.</p>
             <p>
-              Agile &bull; Ruby on Rails &bull; Node.JS &bull; Angular &bull; AWS &bull; Raspberry Pi
+              Ruby on Rails &bull; Node.JS &bull; AngularJS &bull; AWS &bull; Raspberry Pi &bull; Cordova
               <br>
               <br>
               You name it.
@@ -77,8 +74,26 @@
             </p>
             <p>Drop us a message and let's keep in contact.</p>
             <p>
-              <!-- %button.btn.btn-warning{type: "button"} I HAVE A PROJECT OPPORTUNITY -->
+              <a class='btn btn-warning smoothScroll' href='#contact' type='button'>#PING!</a>
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id='environment' name='environment'></section>
+    <div class='f'>
+      <div class='container'>
+        <div class='row centered'>
+          <h3>Environment</h3>
+          <div class='col-lg-6 col-lg-offset-3'>
+            <p>Apple Gear &bull; Raspberry Pi</p>
+            <p>Red Dot Ruby Conf Ticket &bull; AWS Certification</p>
+            <p>Github &bull; Trello &bull; Screenhero &bull; UptimeRobot</p>
+            <p>Test driven development &bull; DevOps automation</p>
+            <p>Agile &bull; Inception &bull; Iteration &bull; Retrospective</p>
+            <p>Entrepreneur &bull; Startup veterans &bull; Community connected</p>
+            <p>Coffee lovers</p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -88,88 +103,64 @@
       <div class='container'>
         <div class='row centered'>
           <h3>Careers</h3>
-          <div class='terminal'>
-            <p>Welcome!</p>
-            <p>
-              You have a passion for keeping systems up and running. You often pick
-              the best tools for the job and favor usability over functionality.
-              Communication is your middle name so you often find yourself engaging
-              users of your applications in conversations to discover what kicks for
-              them. While you are observant even for the smallest of details, you know
-              when to let go of your perfectionist mentality and press the go button.
-              You are a power user of Windows, Linux and OS X operating systems and
-              like to have a career that integrates systems together.
-            </p>
-            <p>
-              login as: staff
-              <br>
-              password:
-            </p>
-            <p>
-              $ jobs
-              <br>
-              [1] + SysOps Engineer
-              <br>
-              [2] - Stopped current
-            </p>
-            <p>
-              $ uname -a
-              <br>
-              SysOps Engineer; Managed Application Services/RICOH Singapore
-            </p>
-            <p>
-              $ cat /proc/job_info
-              <br>
-              operating : Linux, OS X, Windows Server
-              <br>
-              shells : Bash, Zsh, Powershell
-              <br>
-              database : ANY SQL
-              <br>
-              enterprise : CRM, ERP
-              <br>
-              certificate : Diploma in computing or relevant
-            </p>
-            <p>
-              $ ls /optional/
-              <br>
-              report generation tools
-              <br>
-              mail server administration
-              <br>
-              nginx and apache administration
-              <br>
-              shell scripting in windows linux or os x
-              <br>
-              network security
-              <br>
-              amazon web services
-              <br>
-              loves starbucks
-            </p>
-            <p>
-              $ whoami
-              <br>
-              samhon
-              <host>
-                @
-              </host>
-              <domain>
-                ricoh.sg
-              </domain>
-            </p>
-            <p>
-              <prompt>
-                $
-                <span class='freekey'></span>
-                <span class='easter hidden'>
-                  ^C Sequence aborted!
-                  <br>
-                  Email to samhon[at]ricoh.sg with the subject "[APPLY MAS] Red Pill" and get a shot at one of the openings!
-                </span>
-              </prompt>
-              <span class='cursor'>&nbsp;</span>
-            </p>
+          <p class='centered'>
+            <h4 class='white'>SysOps Engineer</h4>
+          </p>
+          <div class='terminal ads'>
+            <div class='notice'>
+              <h4>Duties</h4>
+              <ul>
+                <li>Manage and secure our application infrastructure</li>
+                <li>Ensure application uptime and Appdex</li>
+                <li>Devise high availability strategies</li>
+                <li>Tune database and operating system performance</li>
+                <li>Implement app health agents for system monitoring</li>
+                <li>Troubleshoot and resolve application helpdesk tickets</li>
+              </ul>
+              <p></p>
+              <h4>Requirements</h4>
+              <ul>
+                <li>Terminal mechanic</li>
+                <li>Linux and OS X administration experience</li>
+                <li>Database administration experience</li>
+                <li>Use shell scripts or Ruby/Python/JavaScript to automate tasks</li>
+                <li>Good sense of full stack security</li>
+                <li>Familiar with application layer protocols like HTTP and FTP</li>
+                <li>A good command of English and a sense of humor :)</li>
+              </ul>
+              <h4>How to apply?</h4>
+              <ul>
+                <li>Email samhon @ ricoh.sg</li>
+              </ul>
+            </div>
+          </div>
+          <div class='mobile-hidden'>
+            <h4 class='white'>TERMINUS</h4>
+            <div class='terminal'>
+              <p>Welcome!</p>
+              <p>
+                login as: staff
+                <br>
+                password:
+              </p>
+              <p>
+                $ uname -a
+                <br>
+                SysOps Engineer; Managed Application Services/RICOH Singapore
+              </p>
+              <p>
+                <prompt>
+                  $
+                  <span class='freekey'></span>
+                  <span class='easter hidden'>
+                    ^C Sequence aborted!
+                    <br>
+                    Email to samhon[at]ricoh.sg with the subject "[APPLY MAS] Red Pill" and get a shot at one of the openings!
+                  </span>
+                </prompt>
+                <span class='cursor'>&nbsp;</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

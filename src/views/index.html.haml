@@ -1,15 +1,16 @@
 %section#home{name: "home"}
 #headerwrap
-  .container
+  .container.no-borders
     .logo.ricoh-white
     %br/
     .row
-      .cloud.x1
-      .cloud.x2
-      .cloud.x3
-      .cloud.x4
-      .cloud.x5
       .mas-logo
+      .clouds
+        .cloud.x1
+        .cloud.x2
+        .cloud.x3
+        .cloud.x4
+        .cloud.x5
       %h4.hero-message Design &bull; Build &bull; Deliver &bull; Support
       .scroll-hint
         Interested? Scroll on
@@ -18,19 +19,14 @@
 
 %section#about{name: "about"}
 .f
-  .container
+  .container.no-borders
     .row
       %h3 About
-      %p.centered
-        %i.icon.icon-circle
-        %i.icon.icon-circle
-        %i.icon.icon-circle
-      / INTRO INFORMATIO
       .col-lg-6.col-lg-offset-3
-        %p Ricoh draws from years of experience at providing essential enterprise technologies, and as well as best practices from the Silicon Valley, to form the Managed Application Services team in Singapore.
+        %p Ricoh draws from years of experience at providing essential enterprise technologies, as well as best practices from the Silicon Valley, to form the Managed Application Services team in Singapore.
         %p By crystalizing great ideas and turning them into interesting products, we make the world a better place.
         %p
-          Agile &bull; Ruby on Rails &bull; Node.JS &bull; Angular &bull; AWS &bull; Raspberry Pi
+          Ruby on Rails &bull; Node.JS &bull; AngularJS &bull; AWS &bull; Raspberry Pi &bull; Cordova
           %br/
           %br/
           You name it.
@@ -39,83 +35,76 @@
           We build it.
         %p Drop us a message and let's keep in contact.
         %p
-          / %button.btn.btn-warning{type: "button"} I HAVE A PROJECT OPPORTUNITY
+          %a.btn.btn-warning.smoothScroll{href: "#contact", type: "button"} #PING!
+
+%section#environment{name: "environment"}
+.f
+  .container
+    .row.centered
+      %h3 Environment
+      .col-lg-6.col-lg-offset-3
+        %p Apple Gear &bull; Raspberry Pi
+        %p Red Dot Ruby Conf Ticket &bull; AWS Certification
+        %p Github &bull; Trello &bull; Screenhero &bull; UptimeRobot
+        %p Test driven development &bull; DevOps automation
+        %p Agile &bull; Inception &bull; Iteration &bull; Retrospective
+        %p Entrepreneur &bull; Startup veterans &bull; Community connected
+        %p Coffee lovers
+        %p
+
 
 %section#portfolio{name: "careers"}
 .f
   .container
     .row.centered
       %h3 Careers
-      .terminal
-        %p Welcome!
-        %p
-          You have a passion for keeping systems up and running. You often pick
-          the best tools for the job and favor usability over functionality.
-          Communication is your middle name so you often find yourself engaging
-          users of your applications in conversations to discover what kicks for
-          them. While you are observant even for the smallest of details, you know
-          when to let go of your perfectionist mentality and press the go button.
-          You are a power user of Windows, Linux and OS X operating systems and
-          like to have a career that integrates systems together.
-        %p
-          login as: staff
-          %br/
-          password:
-        %p
-          $ jobs
-          %br/
-          [1] + SysOps Engineer
-          %br/
-          [2] - Stopped current
-        %p
-          $ uname -a
-          %br/
-          SysOps Engineer; Managed Application Services/RICOH Singapore
-        %p
-          $ cat /proc/job_info
-          %br/
-          operating : Linux, OS X, Windows Server
-          %br/
-          shells : Bash, Zsh, Powershell
-          %br/
-          database : ANY SQL
-          %br/
-          enterprise : CRM, ERP
-          %br/
-          certificate : Diploma in computing or relevant
-        %p
-          $ ls /optional/
-          %br/
-          report generation tools
-          %br/
-          mail server administration
-          %br/
-          nginx and apache administration
-          %br/
-          shell scripting in windows linux or os x
-          %br/
-          network security
-          %br/
-          amazon web services
-          %br/
-          loves starbucks
-        %p
-          $ whoami
-          %br/
-          samhon
-          %host
-            @
-          %domain
-            ricoh.sg
-        %p
-          %prompt
-            $
-            %span.freekey
-            %span.easter.hidden
-              ^C Sequence aborted!
-              %br/
-              Email to samhon[at]ricoh.sg with the subject "[APPLY MAS] Red Pill" and get a shot at one of the openings!
-          %span.cursor &nbsp;
+      %p.centered
+        %h4.white SysOps Engineer
+      .terminal.ads
+        .notice
+          %h4 Duties
+          %ul
+            %li Manage and secure our application infrastructure
+            %li Ensure application uptime and Appdex
+            %li Devise high availability strategies
+            %li Tune database and operating system performance
+            %li Implement app health agents for system monitoring
+            %li Troubleshoot and resolve application helpdesk tickets
+          %p
+          %h4 Requirements
+          %ul
+            %li Terminal mechanic
+            %li Linux and OS X administration experience
+            %li Database administration experience
+            %li Use shell scripts or Ruby/Python/JavaScript to automate tasks
+            %li Good sense of full stack security
+            %li Familiar with application layer protocols like HTTP and FTP
+            %li A good command of English and a sense of humor :)
+          %h4 How to apply?
+          %ul
+            %li Email samhon @ ricoh.sg
+
+      .mobile-hidden
+        %h4.white TERMINUS
+        .terminal
+          %p Welcome!
+          %p
+            login as: staff
+            %br/
+            password:
+          %p
+            $ uname -a
+            %br/
+            SysOps Engineer; Managed Application Services/RICOH Singapore
+          %p
+            %prompt
+              $
+              %span.freekey
+              %span.easter.hidden
+                ^C Sequence aborted!
+                %br/
+                Email to samhon[at]ricoh.sg with the subject "[APPLY MAS] Red Pill" and get a shot at one of the openings!
+            %span.cursor &nbsp;
   .submit-cv
     / %button.btn.btn-warning{type: "button"} Submit your CV today!
 %section#contact{name: "contact"}

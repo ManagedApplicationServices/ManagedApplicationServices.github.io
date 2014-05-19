@@ -2,6 +2,17 @@
 		Cloud
 \* ------------------------- */
 
+.clouds {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display:block;
+  z-index: 5;
+}
+
 .cloud{
   z-index: -999;
 	width: 150px;
@@ -11,7 +22,7 @@
 	-moz-border-radius: 200px 200px 200px 200px;
 	-webkit-border-radius: 200px 200px 200px 200px;
 	position: absolute;
-	top:200px;
+	top:200px;}
   display: none;
   visibility:hidden;
   /* Smartphones (portrait and landscape) ----------- */

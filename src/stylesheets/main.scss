@@ -15,7 +15,13 @@ html {
 .container {
   width: 100% !important;
   overflow:hidden;
+  border-top: dashed 1px rgba(255,255,255,0.2);
 }
+
+.no-borders {
+  border: none;
+}
+
 body {
   background-color: #86B4CC; //#f2f2f2;
   font-family: 'Open Sans', sans-serif;
@@ -37,6 +43,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
+h3 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
 /* Paragraph & Typographic */
 
 p {
@@ -46,6 +61,10 @@ p {
 
 .centered {
   text-align: center;
+}
+
+.white {
+  color: rgba(255,255,255,0.9);
 }
 
 /* Links */
@@ -92,6 +111,7 @@ hr {
   background: url(../assets/MAS-logo.png) top center no-repeat;
   margin: 60px auto;
   margin-bottom: 10px;
+  z-index:9;
 }
 .ricoh-white {
   width: 135px;
@@ -171,42 +191,58 @@ hr {
       display: none;
     }
     @media (min-width: 560px) and (max-device-width: 568px) {
-      display:none;
+      display: none;
     }
   }
 }
 
+
+.ads {
+  .notice {
+    h4 {
+      color: rgba(255,255,255,0.7);
+    }
+    font-family:'Open Sans', sans-serif;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.3em;
+  }
+  box-shadow: 0px 1px rgba(255,255,255,0.1);
+  border: solid 1px rgba(0,0,0,0.3);
+  display:block !important;
+}
+
+.mobile-hidden {
+  display:none;
+  @media (min-width: 600px) {
+    display:block !important;
+  }
+}
+
 .terminal {
-  width: 40vw !important;
-  min-width: 280px !important;
-  margin: 0 auto !important;
-  background: none !important;
-  word-break: keep-all !important;
+  width: 40vw;
+  min-width: 280px;
+  margin: 0 auto;
+  word-break: keep-all;
   font-family: 'courier';
   padding: 20px;
-  border: none !important;
-  background-color: #111 !important;
-  text-align: left !important;
-
+  background-color: #111;
+  text-align: left;
   // iPhone Retina Landscape
   @media (min-width: 560px) and (max-device-width : 568px) {
-    min-width: 540px !important;
+    min-width: 540px;
   }
-
   // iPhone Landscape
   @media (min-width: 470px) and (max-device-width : 480px) {
-    min-width: 400px !important;
+    min-width: 400px;
   }
-
-
   @media (min-width: 600px) {
     min-width: 450px !important;
   }
   p {
-    color: rgb(0,200,0) !important;
-    font-size: 0.8em !important;
+    color: rgb(0,200,0);
+    font-size: 0.8em;
     @media (min-width: 600px) {
-      font-size: 1em !important;
+      font-size: 1em;
     }
   }
   @include border-radius(4px, 4px);
