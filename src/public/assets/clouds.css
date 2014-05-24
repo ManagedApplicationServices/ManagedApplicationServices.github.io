@@ -1,21 +1,9 @@
 /*
 Syntax error: Invalid CSS after "  display:": expected pseudoclass or pseudoelement, was " none;"
-        on line 26 of ./stylesheets/clouds.scss
-
-21: 	border-radius: 200px 200px 200px 200px;
-22: 	-moz-border-radius: 200px 200px 200px 200px;
-23: 	-webkit-border-radius: 200px 200px 200px 200px;
-24: 	position: absolute;
-25: 	top:200px;}
-26:   display: none;
-27:   visibility:hidden;
-28:   /* Smartphones (portrait and landscape) ----------- *\/
-29:   @media (min-width: 800px) {
-30:     display: block !important;
-31:     visibility: visible;
+        on line 26 of /Users/sam/workspace/ManagedApplicationServices.github.io/src/stylesheets/clouds.scss
 
 Backtrace:
-./stylesheets/clouds.scss:26
+/Users/sam/workspace/ManagedApplicationServices.github.io/src/stylesheets/clouds.scss:26
 /Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
 /Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
 /Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/scss/parser.rb:1067:in `expr!'
@@ -32,25 +20,31 @@ Backtrace:
 /Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
 /Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
 /Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/sass-3.2.19/lib/sass/plugin/rack.rb:51:in `call'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
-/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
-/Users/sam/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-/Users/sam/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-/Users/sam/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/commands/update_project.rb:45:in `perform'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/bin/compass:44:in `call'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/compass:23:in `load'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/compass:23:in `<main>'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/ruby_executable_hooks:15:in `eval'
+/Users/sam/.rvm/gems/ruby-2.1.1@ManagedApplicationServices/bin/ruby_executable_hooks:15:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  display:\": expected pseudoclass or pseudoelement, was \" none;\"\A         on line 26 of ./stylesheets/clouds.scss\A \A 21: 	border-radius: 200px 200px 200px 200px;\A 22: 	-moz-border-radius: 200px 200px 200px 200px;\A 23: 	-webkit-border-radius: 200px 200px 200px 200px;\A 24: 	position: absolute;\A 25: 	top:200px;}\A 26:   display: none;\A 27:   visibility:hidden;\A 28:   /* Smartphones (portrait and landscape) ----------- */\A 29:   @media (min-width: 800px) {\A 30:     display: block !important;\A 31:     visibility: visible;"; }
+  content: "Syntax error: Invalid CSS after \"  display:\": expected pseudoclass or pseudoelement, was \" none;\"\A         on line 26 of /Users/sam/workspace/ManagedApplicationServices.github.io/src/stylesheets/clouds.scss"; }
