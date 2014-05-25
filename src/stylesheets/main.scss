@@ -7,6 +7,7 @@
  * URL: http://blacktie.co
  */
 @import "compass/css3/border-radius";
+@import "compass/css3/transform";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 html {
@@ -127,6 +128,34 @@ hr {
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
+
+#side-tab {
+  z-index:10;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  margin-top: -100px;
+  width: 30px;
+  height: 200px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+  @include border-top-left-radius(8px);
+  @include border-bottom-left-radius(8px);
+  background: rgba(160,40,40,1);
+  .vertical {
+    font-size: 1.1em;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 180px;
+    margin-top: 110px;
+    margin-left: -75px;
+    top: 0px;
+    left: 0px;
+    color: rgba(255,255,255,0.9);
+  }
+}
 
 #headerwrap {
   margin-top: 0px;

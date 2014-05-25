@@ -6,6 +6,7 @@ $(function(){
 		$('#menuToggle').toggleClass('active');
 		$('body').toggleClass('body-push-toleft');
     $('#theMenu').toggleClass('menu-open');
+    $("#side-tab").toggle();
 	});
   $(document).keydown(function(e) {
     $freekey = $('prompt span.freekey').last();
