@@ -6,6 +6,7 @@
     <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' media='all' rel='stylesheet'>
     <link href='assets/main.css?body=1' media='all' rel='stylesheet'>
     <meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'>
+    <meta content='width=device-width, minimal-ui' name='viewport'>
     <script src='assets/jquery.js?body=1'></script>
     <script src='assets/Chart.js?body=1'></script>
     <script src='assets/bootstrap.js?body=1'></script>
@@ -172,15 +173,20 @@
       </div>
     </div>
     <script>
-      bgBlur = 0;
+      var bgBlur = 0;
+      var width = $(window).width();
+      
       window.onscroll = function() {
         var scrollTop = Math.min(14, ( (document.documentElement.scrollTop || document.body.scrollTop) / 20 ) );
         if(bgBlur != scrollTop) {
           bgBlur = scrollTop;
           $("#background").attr("style", "-webkit-filter: blur("+ bgBlur +"px);");
-          console.log(scrollTop);
         }
       }
+      
+      $(window).resize(function() {
+        if($(window).width() == width) return;
+      });
     </script>
   </body>
 </html>

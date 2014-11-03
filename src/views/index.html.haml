@@ -124,12 +124,17 @@
           \#04-28
         %p &copy; 2014 Ricoh (Singapore) Pte. Ltd.
 :javascript
-  bgBlur = 0;
+  var bgBlur = 0;
+  var width = $(window).width();
+
   window.onscroll = function() {
     var scrollTop = Math.min(14, ( (document.documentElement.scrollTop || document.body.scrollTop) / 20 ) );
     if(bgBlur != scrollTop) {
       bgBlur = scrollTop;
       $("#background").attr("style", "-webkit-filter: blur("+ bgBlur +"px);");
-      console.log(scrollTop);
     }
   }
+
+  $(window).resize(function() {
+    if($(window).width() == width) return;
+  });
