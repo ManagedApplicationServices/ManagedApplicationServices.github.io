@@ -4,7 +4,6 @@
     <title>Managed Application Services :: Ricoh (Singapore) Pte Ltd - Agile software development, Cloud computing, DevOps, Ruby, Rails, Node.JS, Raspberry Pi, AWS</title>
     <link href='assets/bootstrap.css?body=1' media='all' rel='stylesheet'>
     <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' media='all' rel='stylesheet'>
-    <link href='assets/animations.css?body=1' media='all' rel='stylesheet'>
     <link href='assets/main.css?body=1' media='all' rel='stylesheet'>
     <meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'>
     <script src='assets/jquery.js?body=1'></script>
@@ -15,6 +14,7 @@
     <script src='assets/smoothscroll.js?body=1'></script>
   </head>
   <body data-offset='0' data-spy='scroll' data-target='#theMenu'>
+    <div id='background'></div>
     <nav class='menu' id='theMenu'>
       <div class='menu-wrap'>
         <h1 class='logo'>
@@ -31,9 +31,6 @@
         <i class='fa fa-bars'></i>
       </div>
     </nav>
-    <a class='smoothScroll' href='#careers' id='side-tab'>
-      <p class='vertical'>WE ARE HIRING!</p>
-    </a>
     <section id='home' name='home'></section>
     <div id='headerwrap'>
       <div class='container no-borders'>
@@ -41,20 +38,7 @@
         <br>
         <div class='row'>
           <div class='mas-logo'></div>
-          <div class='clouds'>
-            <div class='cloud x1'></div>
-            <div class='cloud x2'></div>
-            <div class='cloud x3'></div>
-            <div class='cloud x4'></div>
-            <div class='cloud x5'></div>
-          </div>
           <h4 class='hero-message'>Design &bull; Build &bull; Deliver &bull; Support</h4>
-          <div class='scroll-hint'>
-            Interested? Scroll on
-            <span>
-              <i class='fa fa-angle-double-up'></i>
-            </span>
-          </div>
         </div>
       </div>
     </div>
@@ -111,7 +95,7 @@
           </p>
           <div class='terminal ads'>
             <div class='notice'>
-              <h4>Duties</h4>
+              <h5>Duties</h5>
               <ul>
                 <li>Manage and secure our application infrastructure</li>
                 <li>Ensure application uptime and Appdex</li>
@@ -121,7 +105,7 @@
                 <li>Troubleshoot and resolve application helpdesk tickets</li>
               </ul>
               <p></p>
-              <h4>Requirements</h4>
+              <h5>Requirements</h5>
               <ul>
                 <li>Terminal mechanic</li>
                 <li>Linux and OS X administration experience</li>
@@ -131,7 +115,7 @@
                 <li>Familiar with application layer protocols like HTTP and FTP</li>
                 <li>A good command of English and a sense of humor :)</li>
               </ul>
-              <h4>How to apply?</h4>
+              <h5>How to apply?</h5>
               <ul>
                 <li>Email samhon@ricoh.sg</li>
               </ul>
@@ -187,5 +171,16 @@
         </div>
       </div>
     </div>
+    <script>
+      bgBlur = 0;
+      window.onscroll = function() {
+        var scrollTop = Math.min(14, ( (document.documentElement.scrollTop || document.body.scrollTop) / 20 ) );
+        if(bgBlur != scrollTop) {
+          bgBlur = scrollTop;
+          $("#background").attr("style", "-webkit-filter: blur("+ bgBlur +"px);");
+          console.log(scrollTop);
+        }
+      }
+    </script>
   </body>
 </html>

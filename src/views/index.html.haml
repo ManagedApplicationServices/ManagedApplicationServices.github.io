@@ -1,5 +1,5 @@
-%a#side-tab.smoothScroll{href: '#careers'}
-  %p.vertical WE ARE HIRING!
+-# %a#side-tab.smoothScroll{href: '#careers'}
+-#   %p.vertical WE ARE HIRING!
 %section#home{name: "home"}
 #headerwrap
   .container.no-borders
@@ -7,17 +7,17 @@
     %br/
     .row
       .mas-logo
-      .clouds
-        .cloud.x1
-        .cloud.x2
-        .cloud.x3
-        .cloud.x4
-        .cloud.x5
+      -# .clouds
+      -#   .cloud.x1
+      -#   .cloud.x2
+      -#   .cloud.x3
+      -#   .cloud.x4
+      -#   .cloud.x5
       %h4.hero-message Design &bull; Build &bull; Deliver &bull; Support
-      .scroll-hint
-        Interested? Scroll on
-        %span
-          %i.fa.fa-angle-double-up
+      -# .scroll-hint
+      -#   Interested? Scroll on
+      -#   %span
+      -#     %i.fa.fa-angle-double-up
 
 %section#about{name: "about"}
 .f
@@ -64,7 +64,7 @@
         %h4.white SysOps Engineer
       .terminal.ads
         .notice
-          %h4 Duties
+          %h5 Duties
           %ul
             %li Manage and secure our application infrastructure
             %li Ensure application uptime and Appdex
@@ -73,7 +73,7 @@
             %li Implement app health agents for system monitoring
             %li Troubleshoot and resolve application helpdesk tickets
           %p
-          %h4 Requirements
+          %h5 Requirements
           %ul
             %li Terminal mechanic
             %li Linux and OS X administration experience
@@ -82,7 +82,7 @@
             %li Good sense of full stack security
             %li Familiar with application layer protocols like HTTP and FTP
             %li A good command of English and a sense of humor :)
-          %h4 How to apply?
+          %h5 How to apply?
           %ul
             %li Email samhon@ricoh.sg
 
@@ -123,3 +123,13 @@
           %br>/
           \#04-28
         %p &copy; 2014 Ricoh (Singapore) Pte. Ltd.
+:javascript
+  bgBlur = 0;
+  window.onscroll = function() {
+    var scrollTop = Math.min(14, ( (document.documentElement.scrollTop || document.body.scrollTop) / 20 ) );
+    if(bgBlur != scrollTop) {
+      bgBlur = scrollTop;
+      $("#background").attr("style", "-webkit-filter: blur("+ bgBlur +"px);");
+      console.log(scrollTop);
+    }
+  }

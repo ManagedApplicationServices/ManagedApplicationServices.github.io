@@ -10,9 +10,31 @@
 @import "compass/css3/transform";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 
+@font-face{
+	font-family: 'Lane-Narrow';
+	src: url('LANENAR_-webfont.eot');
+	src: url('LANENAR_-webfont.eot?iefix') format('eot'),
+	     url('LANENAR_-webfont.woff') format('woff'),
+	     url('LANENAR_-webfont.ttf') format('truetype'),
+	     url('LANENAR_-webfont.svg#webfont') format('svg');
+}
+
 html {
   overflow-x: hidden;
 }
+
+#background {
+  background: url(https://unsplash.imgix.net/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?q=75&fm=jpg&s=dbcec945d03026d723474aca70247bcb) no-repeat;
+  opacity: 1;
+  width: 100vw; height: 100vh;
+  position: fixed;
+  left: 0px; top: 0px;
+  z-index: -1;
+  //box-shadow: inset 0px 0px 300px rgba(0,0,0,0.9);
+  background-size : cover !important;
+	background-position : center center;
+}
+
 .container {
   width: 100% !important;
   overflow:hidden;
@@ -24,9 +46,8 @@ html {
 }
 
 body {
-  background-color: #86B4CC; //#f2f2f2;
+  background-color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
-  //font-family: 'EB Garamond', serif;
   font-weight: 300;
   font-size: 14px;
   color: #555;
@@ -38,10 +59,14 @@ body {
 /* Titles */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  //font-family: 'Oswald', sans-serif;
+	font-family: 'Lane-Narrow', serif;
   font-weight: 300;
-  color: #333;
+	font-size: 3em !important;
+}
+
+h5, h6 {
+	font-size: 2em !important;
+
 }
 
 h3 {
@@ -51,6 +76,11 @@ h3 {
 
 h4 {
   margin-bottom: 20px;
+}
+
+h4.hero-message {
+	font-size: 1.6em !important;
+	font-weight: 600;
 }
 
 /* Paragraph & Typographic */
@@ -109,7 +139,7 @@ hr {
   width:  60%;
   height: 20vw;
   background-size: 100% !important;
-  background: url(../assets/MAS-logo.png) top center no-repeat;
+  background: url(../assets/mas-white-blue-logo.png) top center no-repeat;
   margin: 60px auto;
   margin-bottom: 10px;
   z-index:9;
@@ -254,7 +284,7 @@ hr {
   word-break: keep-all;
   font-family: 'courier';
   padding: 20px;
-  background-color: #111;
+  background-color: rgba(1,1,1, 0.3);
   text-align: left;
   // iPhone Retina Landscape
   @media (min-width: 560px) and (max-device-width : 568px) {
@@ -292,15 +322,15 @@ hr {
 }
 
 @-webkit-keyframes blinker {
-	0%  {background: #111;   }
+	0%  {background: rgba(0,200,0,0);   }
 	50% {background: rgb(0,200,0); }
 }
 @-moz-keyframes blinker {
-	0%  {background: #111;   }
+	0%  {background: rgba(0,200,0,0);   }
 	50% {background: rgb(0,200,0); }
 }
 @-o-keyframes blinker {
-	0%  {background: #111;   }
+	0%  {background: rgba(0,200,0,0);   }
 	50% {background: rgb(0,200,0); }
 }
 
@@ -320,7 +350,8 @@ hr {
 /* Footer Wrap */
 
 .f {
-  background: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.7);
+  //background: #1a1a1a;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -363,7 +394,7 @@ hr {
   position: absolute;
   top: 0;
   left: 60px;
-  background: #1a1a1a;
+  background-color: rgba(26,26,26,1);
   width: 200px;
   height: 100%;
 }
